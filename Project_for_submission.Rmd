@@ -522,7 +522,7 @@ gg3<- ggplot(years5, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Seasonal Changes in Crime in New York City in Brooklyn ",
+        title = " Seasonal Changes in Brooklyn ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -586,7 +586,7 @@ gg4<- ggplot(notlateryears, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Brooklyn ",
+        title = " Annual Changes in Brooklyn ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -602,7 +602,7 @@ gg14<- ggplot(notlateryears, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Brooklyn ",
+        title = " Annual Changes in Brooklyn",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -782,7 +782,7 @@ gg6<- ggplot(years6, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Queens ",
+        title = " Annual Changes in Queens ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -811,7 +811,7 @@ gg15<- ggplot(years6, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Queens ",
+        title = " Annual Changes in Queens ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -988,7 +988,7 @@ gg8<- ggplot(years7, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Manhattan ",
+        title = " Annual Changes in Manhattan ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -1006,7 +1006,7 @@ gg17<- ggplot(years7, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in Manhattan ",
+        title = " Annual Changes in Manhattan ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -1174,7 +1174,7 @@ gg10<- ggplot(years8, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in the Bronx ",
+        title = "Annual Changes in the Bronx",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -1190,7 +1190,7 @@ gg19<- ggplot(years8, aes(x = years)) +
    labs(subtitle = "Crimes VS years",
         y = "Number of crimes",
         x = "years",
-        title = " Annual Changes in Crime in New York City in the Bronx ",
+        title = " Annual Changes in the Bronx ",
        caption = "Data Source: data.gov") +
     scale_y_continuous(breaks =  c(0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)) +
   theme(axis.text.x=element_text(angle=45,margin = margin(1, unit = "cm"),vjust =1))
@@ -1287,7 +1287,23 @@ ggtitle("How much more likely is death from certain events than a shooting in Br
 ## Results and discussion:
 This data set is a perfect example of how numerical data can be interpreted in many ways. And why it is important to look over results and be cautious and mindful when working with data to come to some conclusion. 
 The analyst saw a first supportive result and drew a conclusion from said result. instead of exploring the data further. And performing further analysis. 
-At first glance the numbers seem alarming. But upon closer inspection. It became quite clear that the data was summed over many years, rather than trending. When columns are all summed simply by month instead of using any type of trending, if there is an outlier it may and will often skew results. Additionally what this visualization does not show would be the changes from year to year, not just season to season. Or simply, more data points in general.
+At first glance the numbers seem alarming. But upon closer inspection. 
+
+It became quite clear that the data was summed over many years, rather than trending. When columns are all summed simply by month instead of using any type of trending, if there is an outlier it may and will often skew results. Additionally what this visualization does not show would be the changes from year to year, not just season to season. Or simply, more data points in general.
+
+When the data was divided further and inspected more closely. Some visual differences became quickly apparent.
+For example when the data for the Borough of Brooklyn was further explored. Some variables that would skew results were quickly seen. So those years at least for now were excluded. The data should of course be revisited and retrended once more data becomes available. (fig2)
+
+But what can be seen even from this basic visualization, is that most of the data is closely packed and trends in a generally downward direction. 
+When the data is replotted excluding more recent years. An overall difference can be seen between summer months and winter months.(fig3,fig4,fig5,fig6)
+When the data is further adjusted for even more extraneous data and replotted to the same visualization from before it does not actually change very much. As you can see the plot simply moves down slightly. 
+
+So could this data still be right and valid?(fig7)
+A good thing to do would be to look over some smaller sections. The months of January and July were chosen to be plotted to see if there were any obvious differences between the way a plot of all shootings vs a plot of just a small slice of time would look.(fig8,fig9,fig10,fig11)
+When the data is even more subdivided so there is less to confuse the eye. The data seems more flatenned and there apprears to be fewer differences. 
+While data for Brooklyn shows a generally higher rate of shootings during summer, the other Boroughs show mixed results. Some places have higher shooting counts in July and others have lower numbers. This kind of confounds and muddles the conclusions to be drawn from this analysis. (fig8,fig9,fig10,fig11)
+
+This confusion can be further supported with the use of simple linear models.(fig12,fig13,fig14,fig15) When monthly crime rates are trended and linear modeling is applied. Specifically trending the frequency of appearances of specific dates.The resulting visualization is very flat. With almost no change between different seasons, or years. And this is common to all Boroughs that were included in the study. All had close Y intercepts, and slopes showed to be very flat. Given all of this data and the results obtained from said data. The null hypothesis is rejected. Overall the summer and winter months show the same rates of shootings over time. This also highlights an important point when looking over data sets with a large variety of data. Should data like this be further subdivided into smaller groups and looked at in individual pieces? Or since the data shows an overall rejection of the null hypothesis should the results be taken at face value and not explored further?
 
 
 
@@ -1300,21 +1316,20 @@ plot(gg)
 ```
 
 
-When the data was divided further and inspected more closely. Some visual differences became quickly apparent.
-For example when the data for the Borough of Brooklyn was further explored. Some variables that would skew results were quickly seen. So those years at least for now were excluded. The data should of course be revisited and retrended once more data becomes available. 
 
 
-``` {r}
+
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 4, fig.width = 5}
+print("figure2")
 plot(gg3)
 
 ```
 
+\newpage
 
-But what can be seen even from this basic visualization, is that most of the data is closely packed and trends in a generally downward direction. 
-When the data is replotted excluding more recent years. An overall difference can be seen between summer months and winter months.
 
-``` {r}
-
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 4, fig.width = 5}
+print("Figure3")
 plot(gg4)
 
 
@@ -1322,63 +1337,69 @@ plot(gg4)
 
 
 
-``` {r}
-
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 4, fig.width = 5}
+print("Figure 4")
 plot(gg6)
+print("Figure 5")
 plot(gg8)
+print("Figure 6")
 plot(gg10)
 
 
 
 ```
 
-When the data is further adjusted for even more extraneous data and replotted to the same visualization from before it does not actually change very much. As you can see the plot simply moves down slightly. 
-So could this data still be right and valid?
 
 
 
-```{r}
+
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 5, fig.width = 5}
+print("Figure 7")
 plot(gg1)
 
 
 ```
-A good thing to do would be to look over some smaller sections. The months of January and July were chosen to be plotted to see if there were any obvious differences between the way a plot of all shootings vs a plot of just a small slice of time would look.
-When the data is even more subdivided so there is less to confuse the eye. The data seems more flatenned and there apprears to be fewer differences. 
-
-
-While data for Brooklyn shows a generally higher rate of shootings during summer, the other Boroughs show mixed results. Some places have higher shooting counts in July and others have lower numbers. This kind of confounds and muddles the conclusions to be drawn from this analysis. 
- 
+ \newpage
 
 
 
-```{r}
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 3, fig.width = 4}
+print("Figure 8")
 plot(gg14)
+print("Figure 9")
 plot(gg15)
+```
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 3, fig.width = 4}
+print("Figure 10")
 plot(gg17)
+print("Figure 11")
 plot(gg19)
 
 
 ```
 
 
-This confusion can be further supported with the use of simple linear models. When monthly crime rates are trended and linear modeling is applied. Specifically trending the frequency of appearances of specific dates.The resulting visualization is very flat. With almost no change between different seasons, or years. And this is common to all Boroughs that were included in the study. All had close Y intercepts, and slopes showed to be very flat. Given all of this data and the results obtained from said data. The null hypothesis is rejected. Overall the summer and winter months show the same rates of shootings over time. This also highlights an important point when looking over data sets with a large variety of data. Should data like this be further subdivided into smaller groups and looked at in individual pieces? Or since the data shows an overall rejection of the null hypothesis should the results be taken at face value and not explored further?
+
+\newpage
 
 
-
-``` {r}
-
+``` {r message =FALSE, include= TRUE,warning=FALSE, fig.height = 3, fig.width = 4}
+print("Figure 12")
 plot(gg5)
 print("Linear model output for Brooklyn")
 Brooklynap$coefficients[1]
 Brooklynap$coefficients[2]
+print("Figure 13")
 plot(gg7)
 print("Linear model output for Queens")
 Queensnap$coefficients[1]
 Queensnap$coefficients[2]
+print("Figure 14")
 plot(gg9)
 print("Linear model output for Manhattan")
 Manhattannap$coefficients[1]
 Manhattannap$coefficients[2]
+print("Figure 15")
 plot(gg11)
 print("Linear model output for the Bronx")
 Bronxnap$coefficients[1]
