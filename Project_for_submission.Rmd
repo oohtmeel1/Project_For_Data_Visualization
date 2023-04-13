@@ -1286,24 +1286,22 @@ ggtitle("How much more likely is death from certain events than a shooting in Br
 
 ## Results and discussion:
 This data set is a perfect example of how numerical data can be interpreted in many ways. And why it is important to look over results and be cautious and mindful when working with data to come to some conclusion. 
-The analyst saw a first supportive result and drew a conclusion from said result. instead of exploring the data further. And performing further analysis. 
-At first glance the numbers seem alarming. But upon closer inspection. 
-
-It became quite clear that the data was summed over many years, rather than trending. When columns are all summed simply by month instead of using any type of trending, if there is an outlier it may and will often skew results. Additionally what this visualization does not show would be the changes from year to year, not just season to season. Or simply, more data points in general.
+The analyst saw a first supportive result and drew a conclusion from said result. Instead of exploring the data further, and performing further analysis. 
+At first glance the numbers seem alarming. 
+But upon closer inspection. It became quite clear that the data was summed over many years, rather than being trended over many years. When columns of data are parsed or cleaned like this, if there is an outlier it may and will often skew results and go unnoticed. Additionally any year over year changes can often be missed.
 
 When the data was divided further and inspected more closely. Some visual differences became quickly apparent.
-For example when the data for the Borough of Brooklyn was further explored. Some variables that would skew results were quickly seen. So those years at least for now were excluded. The data should of course be revisited and retrended once more data becomes available. (fig2)
+For example when the data for the Borough of Brooklyn was further explored.(fig2)Some variables that would skew results were quickly seen.The years 2019,2020,2021 all had very large spikes in numbers of shootings. So those years at least for the purposes of this study were excluded. The data should of course be revisited and retrended once more data becomes available. 
 
 But what can be seen even from this basic visualization, is that most of the data is closely packed and trends in a generally downward direction. 
-When the data is replotted excluding more recent years. An overall difference can be seen between summer months and winter months.(fig3,fig4,fig5,fig6)
-When the data is further adjusted for even more extraneous data and replotted to the same visualization from before it does not actually change very much. As you can see the plot simply moves down slightly. 
+When the data is re plotted excluding more recent years. A difference between summer months and winter months is not readily apparent if there is one at all.(fig3,fig4,fig5,fig6)
+The previous visualization(fig1) was also re-plotted (fig7) this time, using data that is a slightly better fit. And excluding the data from very recent years. The overall visual effect seemed to be the same. With a large jump in shootings during the summer months for most boroughs. But this data was a simple summation, and not reliable for trending.
 
-So could this data still be right and valid?(fig7)
-A good thing to do would be to look over some smaller sections. The months of January and July were chosen to be plotted to see if there were any obvious differences between the way a plot of all shootings vs a plot of just a small slice of time would look.(fig8,fig9,fig10,fig11)
-When the data is even more subdivided so there is less to confuse the eye. The data seems more flatenned and there apprears to be fewer differences. 
-While data for Brooklyn shows a generally higher rate of shootings during summer, the other Boroughs show mixed results. Some places have higher shooting counts in July and others have lower numbers. This kind of confounds and muddles the conclusions to be drawn from this analysis. (fig8,fig9,fig10,fig11)
+The months of January and July were chosen to be plotted to see if there were any obvious differences between the way a plot of all shootings vs a plot of just a small slice of time would look.(fig8,fig9,fig10,fig11)
+When the data was even more subdivided so there was less to confuse the eye. The data seemed more flattened and there appeared to be fewer differences. 
+While data for Brooklyn showed generally higher rates of shootings during summer, the other Boroughs show mixed results. Some locations have higher shooting counts in July and others had lower numbers. This kind of confounds and muddles the conclusions to be drawn from this analysis. (fig8,fig9,fig10,fig11)
 
-This confusion can be further supported with the use of simple linear models.(fig12,fig13,fig14,fig15) When monthly crime rates are trended and linear modeling is applied. Specifically trending the frequency of appearances of specific dates.The resulting visualization is very flat. With almost no change between different seasons, or years. And this is common to all Boroughs that were included in the study. All had close Y intercepts, and slopes showed to be very flat. Given all of this data and the results obtained from said data. The null hypothesis is rejected. Overall the summer and winter months show the same rates of shootings over time. This also highlights an important point when looking over data sets with a large variety of data. Should data like this be further subdivided into smaller groups and looked at in individual pieces? Or since the data shows an overall rejection of the null hypothesis should the results be taken at face value and not explored further?
+This confusion can be quickly refuted with the use of simple linear models.(fig12,fig13,fig14,fig15) When monthly crime rates were trended and linear modeling was applied. Specifically trending the frequency of appearances of specific dates, so two shootings in one day, would mean two counts of said date, etc.The resulting visualizations were very flat. With almost no change between different seasons, or years. And this was common to all Boroughs that were included in the study. All had close Y intercepts, and slopes showed to be very flat. Given all of this data and the results obtained from said data. The null hypothesis was rejected. Overall the summer and winter months show the same rates of shootings over time. This also highlighted an important point when looking over data sets with a large variety of data. Should data like this be further subdivided into smaller groups and looked at in individual pieces? Or since the data shows an overall rejection of the null hypothesis should the results be taken at face value and not explored further?
 
 
 
